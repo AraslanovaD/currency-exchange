@@ -1,0 +1,48 @@
+.add {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.country select {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 4px;
+  color:#16110c;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 4px 8px;
+
+  background-color: #b19576;
+}
+
+button:hover {
+  background-color: #82674a;
+  color:#f2ede7;
+}
+
+@media (min-width: 960px) {
+  .add {
+    flex-direction: row;
+    
+  }
+  button {
+    align-self: end;
+  }
+}
+
+@media (max-width: 959px) {
+  .add {
+    flex-direction: column;
+  }
+}

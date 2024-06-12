@@ -1,0 +1,50 @@
+h1,
+h2 {
+    color: #2b2219;
+    text-align: center;
+}
+
+.allExchanges {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+}
+
+.app {
+    margin: 0 auto;
+    background-color: #e6dbcf;
+    padding: 0 16px 8px;
+    border-radius: 32px;
+    filter: drop-shadow(0px 4px 4px #82674a5d);
+}
+
+@media (min-width: 1200px){
+    .app {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .app {
+        width: 940px;
+    }
+}
+
+
+@media (min-width: 640px) and (max-width: 959px) {
+    .app {
+        width: 620px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+    .app {
+        width: 460px;
+    }
+}
+
+@media (max-width: 479px) {
+    .app {
+        width: 300px;
+    }
+}

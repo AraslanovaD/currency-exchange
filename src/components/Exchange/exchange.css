@@ -1,0 +1,50 @@
+.exchange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 16px;
+  padding: 16px;
+
+  background-color: #f2ede7;
+
+}
+
+.exchange img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+}
+
+.currency input {
+  font-size: 24px;
+  border-radius: 8px;
+  border-color: #2b2219;
+  color:#16110c;
+}
+
+@media (min-width: 960px) {
+  .exchange {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 959px) {
+  .exchange {
+    flex-direction: column;
+  }
+
+  .btn {
+    order: -1;
+    align-self: flex-end;
+  }
+
+  .swap{
+    padding: 16px 0 0px;
+  }
+}
